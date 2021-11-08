@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <title>float 예제</title>
+    <style>
+    
+        .cont {
+            margin: 50px;
+            padding: 16px 16px 12px 17px;
+            width: 350px;
+            background: #f7f9fa;
+        }
+
+        .cont::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+
+        .cont p {
+            color: #808080;
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
+
+        .cont .login {
+            display: block;
+            background: #19ce60;
+            text-decoration: none;
+            text-align: center;
+            box-sizing: border-box;
+            border-radius: 2px;
+            padding: 15px 0;
+            color: white;
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .cont .login img {
+            display: inline-block;
+            width: 60px;
+
+        }
+        .flex_box {
+            display: flex;
+            /* width: 350px; */
+            justify-content: space-between;
+            
+        }
+        .find {
+            display: flex;
+            margin-top: 10px;
+            font-size: 12px;
+        }
+
+        .find img,
+        .find a {
+            
+        }
+
+        .find img {
+            width: 10px;
+            margin: -2px 1px;
+        }
+
+        .find a,
+        .sign_up a {
+            text-decoration: none;
+            color: #404040;
+            margin: 0 2px;
+            font-size: 12px;
+        }
+
+        .sign_up {
+            margin-top: 10px;
+            font-size: 12px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .sign_up img {
+            width: 10px;
+        }
+
+    </style>
+    
+</head>
+
+<body>
+    <div class="cont">
+        <p>네이버를 더 안전하고 편리하게 이용하세요</p>
+        <a href="#" class="login">
+            <img src="images/title.png" alt="naver">
+            로그인
+        </a>
+        <div class="flex_box">
+            <div class="find">
+                <img src="images/lock.png" alt="lock_icon">
+                <a href="#">아이디</a>
+                <a href="#">비밀번호</a>
+            </div>
+            <div class="sign_up">
+                <img src="images/user.png" alt="user_icon">
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
