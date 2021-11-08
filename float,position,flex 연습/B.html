@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>flex로 배치하기</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+        .container {
+            width: 400px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+        }
+
+        .item:nth-child(1) {
+            background-color: pink;
+            width: 200px;
+            order: 1;
+        }
+
+        .item:nth-child(2) {
+            background-color: yellow;
+        }
+
+        .item:nth-child(3) {
+            background-color: lightGreen;
+        }
+
+        .item:nth-child(4) {
+            background-color: skyBlue;
+            order: 1;
+        }
+
+        .item:nth-child(5) {
+            background-color: lightGrey;
+            order: 1;
+        }
+
+        .item:nth-child(6) {
+            background-color: lightCoral;
+            order: 1;
+        }
+
+        .item:nth-child(7) {
+            background-color: violet;
+            order: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+    </div>
+</body>
+
+</html>

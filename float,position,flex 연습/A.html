@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>float, position으로 배치</title>
+  <style>
+    body {
+      margin: 50px;
+    }
+    .container {
+      width: 400px;
+      height: 200px;
+      position: relative;
+    }
+    .container::after {
+      clear:both;
+      display: block;
+      content: "";
+    }
+    .item {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+    }
+
+    .item:nth-child(1) {
+      background-color: pink;
+      width: 200px;
+      height: 200px;
+      float: right;
+      right: 0;
+    }
+
+    .item:nth-child(2) {
+      background-color: yellow;
+      left: 0;
+      top: 0;
+    }
+
+    .item:nth-child(3) {
+      background-color: lightGreen;
+      left: 100px;
+      top: 0;
+    }
+
+    .item:nth-child(4) {
+      background-color: skyBlue;
+      left: 0;
+      bottom: 0;
+    }
+
+    .item:nth-child(5) {
+      background-color: lightGrey;
+      left: 100px;
+      bottom: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+  </div>
+</body>
+
+</html>
