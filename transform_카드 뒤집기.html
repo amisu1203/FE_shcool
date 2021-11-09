@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>perpective_카드 뒤집기</title>
+    <style>
+        .container  {
+            width: 370px;
+            height: 550px;
+            background: rgb(177, 177, 177);
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px auto 0;
+        }
+        .card {
+            position: relative;
+            width: 270px;
+            height: 350px;
+            perspective: 400px;
+            backface-visibility: hidden;
+            transition: .9s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 22px;
+            font-weight: 700;
+        }
+        .card p {
+            font-weight: 900;
+            margin-left: 6px;
+            color: white;
+        }
+        .front {
+            position: absolute;
+            background: rgb(237, 183, 192);
+            transform: rotateY(0);
+            box-shadow: 2px 5px 12px gray;
+        }
+        .back {
+            position: absolute;
+            background: rgb(216, 108, 108);
+            transform: rotateY(180deg);
+            box-shadow: 2px 5px 12px gray;
+        }
+        .card:hover .front {
+            transform: rotateY(540deg);
+
+        }
+        .card:hover .back {
+            transform: rotateY(720deg);
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card front">This is the<p> front!</p></div>
+            <div class="card back">This is the<p> back!</p></div>
+        </div>
+    </div>
+</body>
+
+</html>
