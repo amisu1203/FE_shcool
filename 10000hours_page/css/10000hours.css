@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'OTEnjoystoriesBA';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/OTEnjoystoriesBA.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Noto Sans KR';
+    font-style: normal;
+    font-weight: 400;
+    src: url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff2") format('woff2'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.woff") format('woff'),
+    url("https://fonts.gstatic.com/ea/notosanskr/v2/NotoSansKR-Regular.otf") format('opentype');
+}
+
+body {
+    height: 1963px;
+    width: 1920px;
+}
+
+.sr-only {
+    text-indent: -9999px;
+}
+
+.container {
+    width: 1920px;
+    height: 1963px;
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    background: #5B2386;
+}
+
+.container header {
+    position: absolute;
+    width: 1920px;
+    height: 1963px;
+    left: 0;
+    top: 0;
+    right: 0;
+    border: 2px solid red;
+}
+
+.container header .clock {
+    position: absolute;
+    width: 225px;
+    height: 225px;
+    top: 145px;
+    left: 840px;
+}
+
+.container header .title {
+    position: absolute;
+    width: 564px;
+    height: 112px;
+    left: 678px;
+    top: 199px;
+}
+main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1920px;
+    height: 1963px;
+    border: 2px solid green;
+}
+.container main>strong {
+    position: absolute;
+    left: 717px;
+    top: 436px;
+    width: 486px;
+    height: 40px;
+    font-family: 'OTEnjoystoriesBA';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 39.6px;
+    /* identical to box height */
+    display: flex;
+    justify-content: center; 
+    text-align: center;
+    color: #F5DF4D;
+}
+.container main .quote {
+    position: absolute;
+    width: 373px;
+    height: 85px;
+    left: 774px;
+    top: 554px;
+    font-family: 'GmarketSansMedium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+}
+.container main .quote strong {
+    font-size: 24px;
+    font-family: 'GmarketSansBold';
+    font-weight: 700;
+    line-height: 30px;
+}
+.container main .inputArea {
+    position: absolute;
+    left: 578px;
+    top: 741px;
+    width: 765px;
+    height: 152px;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Noto Sans KR';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 57px;
+}
+.container main .inputArea .inputJob {
+    display: flex;
+    width: 514px;
+    height: 57px;
+    text-align: center;
+    justify-content: space-around;
+}
+.container main .inputArea .inputHour {
+    display: flex;
+    width: 765px;
+    height: 57px;
+    justify-content: space-around;
+}
+.container main .inputArea input {
+    width: 228px;
+    height: 57px;
+    border-radius: 7px;
+    background: #FFFFFF;
+    text-align: center;
+    font-family: 'GmarketSansMedium';
+    font-size: 24px;
+    color: #babcbe;
+    line-height: 24px;
+}
+.container main button {
+    position:  absolute;
+    top: 997px;
+    left: 678px;
+    width: 565px;
+    height: 66px;
+    padding: 21px 49px;
+    background: #FCEE21;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 56px;
+    font-family: 'GmarketSansMedium';
+    color: #5B2386;
+    font-size: 24px;
+    line-height: 24px;
+    font-weight: 700;
+}
+.container main .output {
+    position: absolute;
+    width: 663px;
+    height: 161px;
+    left: 629px;
+    bottom: 518px;
+}
