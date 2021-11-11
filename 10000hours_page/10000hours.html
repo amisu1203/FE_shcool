@@ -18,7 +18,7 @@
             <img src="http://www.paullab.co.kr/images/10000hours/title.png" alt="1만 시간의 법칙" class="title">
         </header>
         <main>
-            <strong>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</strong>
+            <q>"연습은 어제의 당신보다 당신을 더 낫게 만든다."</q>
             <div class="quote">
                 <strong>1만 시간의 법칙</strong>
                 <p>은</p>
@@ -28,45 +28,39 @@
             <div class="inputArea">
                 <div class="inputJob">
                     <p>나는</p>
-                    <label>
                         <input type="text" placeholder="예)프로그래밍">
-                    </label>
                     <p>전문가가 될 것이다.</p>
                 </div>
                 <div class="inputHour">
                     <p>그래서 앞으로 매일 하루에</p>
-                    <label>
-                        <input type="number" placeholder="예)5시간">
-                    </label>
+                        <input type="number" placeholder="예)5시간" min="1" max="24">
                     <p>시간씩 훈련할 것이다.</p>
                 </div>
             </div>
-            <a href="#">
-                <button type="submit">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
-            </a>
-            <div class="output">
-                <div class="outputJob">
-                    <p>당신은</p>
+            <button type="submit" class="btnSubmit">나는 며칠 동안 훈련을 해야 1만 시간이 될까?</button>
+            <section class="outputArea">
+                <h2 class="sr-only">입력 결과</h2>
+                <p class="outputJob">
+                    당신은
                     <strong>프로그래밍</strong>
-                    <p>전문가가 되기 위해서</p>
-                </div>
-                <div class="outputHour">
-                    <p>대략</p>
+                    전문가가 되기 위해서
+                </p>
+                <p class="outputHour">
+                    대략
                     <strong>5110</strong>
-                    <p>일 이상 훈련하셔야 합니다! :)</p>
-                </div>
-            </div>
-            <section>
-                <button>훈련하러 가기 GO!GO!</button>
-                <button>공유하기</button>
+                    일 이상 훈련하셔야 합니다! :)
+                </p>
             </section>
         </main>
         <footer>
-            <section>
+            <section class="copyright">
                 <h2 class="sr-only">저작권 정보</h2>
-                <img src="http://www.paullab.co.kr/images/10000hours/logo.png" alt="weniv logo">
-                <p>※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 WeNiv에 있습니다.</p>
-                <p>수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.</p>
+                <img src="http://www.paullab.co.kr/images/10000hours/logo.png" alt="company logo">
+                <small>
+                    ※ 본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 Weniv에 있습니다.
+                    <br>
+                    수정 및 재배포, 무단 도용 시 법적인 문제가 발생할 수 있습니다.
+                </small>
             </section>
         </footer>
     </div>
