@@ -4,12 +4,12 @@
 .cont {
     max-width: 520px;
 }
-.cont .cont_tit { 
+.cont .cont__tit { 
     width: 520px;
     height: 60px;
     border-bottom: 1px solid #c4c4c4;
 }
-.cont .cont_tit h1 {
+.cont .cont__tit h1 {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
     font-size: 16px;
     font-style: normal;
@@ -20,10 +20,10 @@
     line-height: 60px;
     max-width: 100%;
 }   
-.cont .form_login {
+.cont .login-form {
     padding: 0 24px;
 }
-.cont .form_login p {
+.cont .login-form p {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
     font-size: 20px;
     font-style: normal;
@@ -34,11 +34,11 @@
     margin: 26px 0 26px 0;
     max-width: 100%;
 }
-.cont .form_login .cont_wrap {
+.cont .login-form .cont-wrap {
     display: flex;
     flex-direction: column;
 }
-.cont .form_login .inp {
+.cont .login-form .inp {
     width: 475px;
     height: 50px;
     border: 1px solid #C4C4C4;
@@ -55,7 +55,7 @@
     align-items: center;
     color: #767676;
 }
-.cont .form_login #savelogin {
+.cont .login-form #savelogin {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
     font-size: 16px;
     font-style: normal;
@@ -66,7 +66,7 @@
     margin-bottom: 21px;
     max-width: 100%;
 }
-.cont .form_login .btn_login {
+.cont .login-form .btn-login {
     display: block;
     width: 472px;
     height: 50px;
@@ -84,7 +84,7 @@
     cursor: pointer;
 
 }
-.cont .form_login .vert {
+.cont .login-form .vert {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
     font-size: 14px;
     font-style: normal;
@@ -94,7 +94,7 @@
     text-align: left;
     color: #767676;
 }
-.cont .form_login .vert::before {
+.cont .login-form .vert::before {
     content: '';
     display: inline-block;
     width: 210px;
@@ -103,7 +103,7 @@
     margin-right: 13px;
     vertical-align: middle;
 }
-.cont .form_login .vert::after {
+.cont .login-form .vert::after {
     content: '';
     display: inline-block;
     width: 210px;
@@ -112,12 +112,12 @@
     margin-left: 13px;
     vertical-align: middle;
 }
-.cont .form_login .cont_link_login {
+.cont .login-form .cont-login-link{
     display: flex;
     justify-content: center;
     margin-bottom: 30px;
 }
-.cont .form_login .cont_link_login [class^="link"] {
+.cont .login-form .cont-login-link [class^="link"] {
     font-family: 'Spoqa Han Sans Neo', 'sans-serif'; 
     font-size: 14px;
     font-style: normal;
@@ -128,7 +128,7 @@
     text-decoration: none;
     color: #767676;
 }
-.cont .form_login .link_join::after {
+.cont .login-form .link__join::after {
     content: '';
     display: inline-block;
     width: 1px;
@@ -138,7 +138,7 @@
     vertical-align: text-top;
 }
 
-.cont .form_login .cont_link_outside a {
+.cont .login-form .cont-outside-link a {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -158,10 +158,10 @@
     color: #767676;
     text-align: center;
 }
-.cont .form_login .cont_link_outside .link_google {
+.cont .login-form .cont-outside-link .link__google {
     border-color: #767676;
 }
-.cont .form_login .cont_link_outside .link_google::before {
+.cont .login-form .cont-outside-link .link__google::before {
     content: '';
     display: inline-block;
     background: url(./images/Google__G__Logo\ 1.png);
@@ -170,10 +170,10 @@
     position: absolute;
     left: 12px;
 }
-.cont .form_login .cont_link_outside .link_facebook {
+.cont .login-form .cont-outside-link .link__facebook {
     border-color: #2D9CDB;
 }
-.cont .form_login .cont_link_outside .link_facebook::before {
+.cont .login-form .cont-outside-link .link__facebook::before {
     content: '';
     display: block;
     background: url(./images/facebook.png);
@@ -182,10 +182,10 @@
     position: absolute;
     left: 12px;
 }
-.cont .form_login .cont_link_outside .link_naver {
+.cont .login-form .cont-outside-link .link__naver {
     border-color: #00BF18;
 }
-.cont .form_login .cont_link_outside .link_naver::before {
+.cont .login-form .cont-outside-link .link__naver::before {
     content: '';
     display: block;
     background: url(./images/naver-logo.png);
@@ -194,11 +194,11 @@
     position: absolute;
     left: 12px;
 }
-.cont .form_login .cont_link_outside .link_kakao {
+.cont .login-form .cont-outside-link .link__kakao {
     border-color: #F2C94C;
     margin-bottom: 25px;
 }
-.cont .form_login .cont_link_outside .link_kakao::before {
+.cont .login-form .cont-outside-link .link__kakao::before {
     content: '';
     display: block;
     background: url(./images/message-circle.png);
@@ -211,13 +211,13 @@
     .cont {
         max-width: 100%;
     }
-    .cont .cont_tit {
+    .cont .cont__tit {
         width: 100%;
     }
-    .cont .cont_tit h1 {
+    .cont .cont__tit h1 {
         font-size: 24px;
     }
-    .cont .form_login {
+    .cont .login-form {
         /* border: 2px solid red; */
         display: flex;
         flex-direction: column;
@@ -226,37 +226,34 @@
         font-size: 20px;
         height: 80vh;
     }
-    .cont .form_login fieldset {
+    .cont .login-form fieldset {
         display: flex;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
         padding: 0 10px;
     }
-    .cont .form_login p {
+    .cont .login-form p {
         font-size: 21px;
     }
-    .cont .form_login .inp {
+    .cont .login-form .inp {
         font-size: 20px;
     }
-    .cont .form_login .btn_login {
+    .cont .login-form .btn-login {
         font-size: 20px;
     }
-    .cont .form_login .cont_link_login [class^="link"] {
+    .cont .login-form .cont-login-link [class^="link"] {
         font-size: 20px;
         line-height: 20px;
     }
-    .cont .form_login .link_join::after {
+    .cont .login-form .link__join::after {
         vertical-align: middle;
     }
-    .cont .form_login .vert {
+    .cont .login-form .vert {
         font-size: 20px;
     }
-    .cont .form_login .cont_link_outside a {
+    .cont .login-form .cont-outside-link a {
         font-size: 22px;
-        max-width: 100%;
+        max-width: 100%
     }
 }
-
-
-
