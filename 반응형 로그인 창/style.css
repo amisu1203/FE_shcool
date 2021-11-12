@@ -241,6 +241,7 @@
     }
     .cont .login-form .btn-login {
         font-size: 20px;
+        margin-bottom: 0;
     }
     .cont .login-form .cont-login-link [class^="link"] {
         font-size: 20px;
