@@ -39,7 +39,7 @@
     max-width: 100%;
     border-radius: 2px solid red;
 }
-.cont .login-form .inp {
+.cont .login-form .cont-wrap__inp {
     display: inline-block;
     height: 50px;
     border: 1px solid #C4C4C4;
@@ -237,7 +237,7 @@
     .cont .login-form p {
         font-size: 21px;
     }
-    .cont .login-form .inp {
+    .cont .login-form .cont-wrap__inp {
         font-size: 20px;
     }
     .cont .login-form .btn-login {
@@ -258,9 +258,11 @@
         max-width: 100%
     }
 }
-/* 아이폰 */
 @media screen and (max-width: 414px) {
     .cont .login-form p {
         font-size: 17px;
     }
 }
+
+
+
