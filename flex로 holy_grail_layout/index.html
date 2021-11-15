@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>holy_grail_layout</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"/>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .cont-wrap {
+            display: flex;
+            flex-wrap: wrap;
+            font-size: 22px;
+        }
+        header {
+            width: 100%;
+            background: #EA907B;
+            position: sticky;
+            top: 0;
+        }
+        header .menu {
+            display: flex;
+            padding: 30px 20px;
+        }
+        header .menu .li-color a {
+            text-decoration: none;
+            font-size: 32px;
+            font-weight: 700;
+            color: white;
+            margin-right: 20px;
+        }
+        header .menu .li-logo {
+            margin-right: auto;
+        }
+        header .menu .icon {
+            color: white;
+            display: none;
+        }
+        section {
+            width: 70%;
+            background: #745C6F;
+            padding: 20px 0;
+        }
+        section article {
+            width: 90%;
+            margin: 0 auto;
+        }
+        section article h3 {
+            font-size: 27px;
+            font-weight: 700;
+            margin: 30px 0 20px 0;
+        }
+        section article img {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        aside {
+            width: 30%;
+            background: #B37280;
+            padding: 20px 0;
+        }
+        aside p {
+            width: 90%;
+            margin: 30px auto;
+        }
+        
+        footer {
+            width: 100vw;
+            background: #444347;
+            padding: 30px 20px;
+            color: white;
+        }
+        @media screen and (max-width: 800px) {
+            header .menu .li-color {
+                display: none;
+            }
+            header .menu .li-logo {
+                display: block;
+            }
+            header .menu .icon {
+                display: block;
+                line-height: 32px;
+                color: white;
+            }
+            footer {
+                font-size: 16px;
+            }
+            
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont-wrap">
+        <header>
+            <h1 class="blind">page menu</h1>
+            <nav>
+                <ul class="menu">
+                    <li class="li-color li-logo"><a href="#">LOGO</a></li>
+                    <li class="li-color"><a href="#">MENU1</a></li>
+                    <li class="li-color"><a href="#">MENU2</a></li>
+                    <li class="li-color"><a href="#">MENU3</a></li>
+                    <li class="li-color"><a href="#">MENU4</a></li>
+                    <li>
+                        <a href="#" class="icon"><i class="fas fa-bars"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <h2 class="blind">main article</h2>
+            <article>
+                <h3>aritlce 1</h3>
+                <img src="./a.jpg" alt="섭지코지">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum a consectetur saepe repellat provident placeat laboriosam animi vitae. Tempore non quos quae molestias, ducimus rem minima dolor incidunt culpa.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad culpa odio, quibusdam voluptatibus laborum quod sed? Voluptatum, quo molestiae enim officia sapiente sunt! Quae quod nesciunt laboriosam amet distinctio.
+                </p>
+            </article>
+            <article>
+                <h3>aritlce 2</h3>
+                <img src="./a.jpg" alt="섭지코지">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum a consectetur saepe repellat provident placeat laboriosam animi vitae. Tempore non quos quae molestias, ducimus rem minima dolor incidunt culpa.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad culpa odio, quibusdam voluptatibus laborum quod sed? Voluptatum, quo molestiae enim officia sapiente sunt! Quae quod nesciunt laboriosam amet distinctio.
+                </p>
+            </article>
+            <article>
+                <h3>aritlce 3</h3>
+                <img src="./a.jpg" alt="섭지코지">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta harum a consectetur saepe repellat provident placeat laboriosam animi vitae. Tempore non quos quae molestias, ducimus rem minima dolor incidunt culpa.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ad culpa odio, quibusdam voluptatibus laborum quod sed? Voluptatum, quo molestiae enim officia sapiente sunt! Quae quod nesciunt laboriosam amet distinctio.
+                </p>
+            </article>
+        </section>
+        <aside>
+            <h3 class="blind">aside</h3>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vitae ab, illum culpa, nemo, porro officia repellat corporis ratione quos iusto ullam. Eveniet nisi quisquam quibusdam quasi laudantium, molestias qui.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vitae ab, illum culpa, nemo, porro officia repellat corporis ratione quos iusto ullam. Eveniet nisi quisquam quibusdam quasi laudantium, molestias qui.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vitae ab, illum culpa, nemo, porro officia repellat corporis ratione quos iusto ullam. Eveniet nisi quisquam quibusdam quasi laudantium, molestias qui.
+            </p>
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam vitae ab, illum culpa, nemo, porro officia repellat corporis ratione quos iusto ullam. Eveniet nisi quisquam quibusdam quasi laudantium, molestias qui.
+            </p>
+        </aside>
+        <footer>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus nemo possimus blanditiis odit quaerat sint numquam culpa excepturi unde aspernatur magni, illo hic dicta quae, ut quasi quibusdam eos vero.</p>
+        </footer>
+    </div>
+</body>
+
+</html>
