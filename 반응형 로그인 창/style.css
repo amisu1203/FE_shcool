@@ -92,13 +92,13 @@
     font-weight: 400;
     line-height: 18px;
     letter-spacing: 0em;
-    text-align: left;
+    text-align: center;
     color: #767676;
 }
 .cont .login-form .horizon::before {
     content: '';
     display: inline-block;
-    width: 210px;
+    width: calc(50% - 35px);
     height: 1px;
     background: #C4C4C4;
     margin-right: 13px;
@@ -107,7 +107,7 @@
 .cont .login-form .horizon::after {
     content: '';
     display: inline-block;
-    width: 210px;
+    width: calc(50% - 35px);
     height: 1px;
     background: #C4C4C4;
     margin-left: 13px;
@@ -251,7 +251,7 @@
         vertical-align:  middle;
     }
     .cont .login-form .horizon
- {
+    {  
         font-size: 20px;
     }
     .cont .login-form .cont-outside-link a {
