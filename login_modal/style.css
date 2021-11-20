@@ -1,0 +1,53 @@
+@charset "utf-8";
+/* base */
+@font-face {
+    font-family: Spoqa Han Sans Neo;
+    src: url("../font/SpoqaHanSansNeo-Regular.woff") format("woff");
+    font-weight: 400;
+}
+@font-face {
+    font-family: Spoqa Han Sans Neo;
+    src: url("../font/SpoqaHanSansNeo-Medium.woff") format("woff");
+    font-weight: 500;
+}
+@font-face {
+    font-family: Spoqa Han Sans Neo;
+    src: url("../font/SpoqaHanSansNeo-Bold.woff") format("woff");
+    font-weight: 700;
+}
+
+
+body{
+    font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+#appLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.cont-login {
+    width: 440px;
+    padding:38px 30px 30px;
+    text-align: center;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+}
+
+.cont-login .tit-login {
+    width: 138px;
+    margin: 0 auto 28px auto;
+}
+.cont-login .txt-login {
+    margin-bottom: 32px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0em;
+}
+.cont-login .btn-login {
+    font-size: 22px;
+}
