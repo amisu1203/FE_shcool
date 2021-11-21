@@ -10,13 +10,13 @@
    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-   <!-- <main id="appLogin">
+   <main id="appLogin">
       <article class="cont-login">
          <h1 class="tit-login"><img src="./images-login/logo.png" alt="weniv"></h1>
          <p class="txt-login">위니브를 더 즐겁고 편리하게 이용하세요.</p>
          <button class="btn-login">로그인</button>
       </article>
-   </main> -->
+   </main>
    <!-- 모달창 -->
    <article class="modal-login">
       <h2 class="txt-hide">회원으로 로그인 혹은 sns로 로그인</h2>
@@ -43,15 +43,32 @@
                <li><a href="#none" class="link-join">회원가입</a></li>
                <li><a href="#none" class="link-find">아이디/비밀번호 찾기</a></li>
             </ul>
-            <p class="horizon">또는</p>
+         </form>
+         <section class="cont-sns-login">
             <ul class="cont-link-sns">
                <li><a href="#none" class="link-sns-login link-google">구글 계정으로 로그인</a></li>
                <li><a href="#none" class="link-sns-login link-facebook">페이스북 계정으로 로그인</a></li>
                <li><a href="#none" class="link-sns-login link-naver">네이버 계정으로 로그인</a></li>
                <li><a href="#none" class="link-sns-login link-kakao">카카오 계정으로 로그인</a></li>
-            </ul>   
-         </form>
+            </ul>
+         </section>  
       </section>
    </article>
+   <script>
+      let 모달 = false;
+      document.querySelector('.btn-close').addEventListener('click', function(){
+            if (모달 == true){
+                document.querySelector('.modal-login').style.display = 'none';
+                모달 = false;
+            }
+        });
+
+        document.querySelector('.btn-login').addEventListener('click', function(){
+            if (모달 == false){
+                document.querySelector('.modal-login').style.display = 'block';
+                모달 = true;
+            }
+        });
+   </script>
 </body>
 </html>
