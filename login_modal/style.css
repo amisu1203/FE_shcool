@@ -30,7 +30,7 @@ body{
 
 .cont-login {
     width: 440px;
-    padding:38px 30px 30px;
+    padding: 38px 30px 30px;
     text-align: center;
     border: 1px solid #C4C4C4;
     border-radius: 5px;
@@ -53,36 +53,55 @@ body{
 }
 
 /* 모달창 레이아웃*/
-.modal-login {
-    width: 520px;
-    margin: 20px auto;
-    border: 1px solid #C4C4C4;
-    border-radius: 10px;
-    box-sizing: border-box;
-}
-.cont-form .form-login {
-    padding: 24px 24px 25px;
+.modal-login{
+    display: none;
+    height: 100%;
 }
 
-/* 모달창 헤더 스타일링 */
-.cont-form .tit-login {
-    font-size: 16px;
-    font-style: normal;
+.modal-login::after{
+    display: block;
+    content:"";
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .7;
+    z-index: 10;
+}
+
+.modal-login .cont-form{
+    width: 100%;
+    max-width: 520px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -40% );
+    background-color: #fff;
+    z-index: 20;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+}
+
+.cont-form .tit-login{
     font-weight: 500;
+    font-size: 16px;
     line-height: 58px;
-    letter-spacing: 0em;
     text-align: center;
     border-bottom: 1px solid #C4C4C4;
 }
 
-.cont-form .txt-login {
-    font-size: 20px;
-    font-style: normal;
+.cont-form .txt-login{
+    margin: 26px 0 0;
+    padding-left: 24px;
     font-weight: 500;
-    line-height: 26px;
-    letter-spacing: 0em;  
-    text-align: left;
-    margin: 26px 25px 0;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.cont-form .form-login {
+    padding: 26px 24px;
 }
 
 /* 모달창 폼 스타일링 */
@@ -113,4 +132,81 @@ body{
 .cont-form .inp-login-hold:focus+.labl-login-hold::before {
     outline: 2px solid rgb(0,95,204);
     border-radius: 50%;
+}
+.cont-form .inp-login-hold:checked+.labl-login-hold::before {
+    content: "";
+    background: url('./images-login/icon_check.png');
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    vertical-align: -5px;
+    margin-right: 8px;
+}
+
+.cont-form .btn-close {
+    position: absolute;
+    top: 18px;
+    right: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.cont-form .cont-link-user {
+    display: flex;
+    justify-content: center;
+}
+.cont-link-user a {
+    text-decoration: none;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 68px;
+    letter-spacing: 0em;
+    color: #767676;
+}
+.cont-link-user .link-join::after {
+    content: '\007C';
+    display: inline-block;
+    margin: 0 12px;
+}
+
+/* 모달창 sns 로그인 레이아웃 */
+.modal-login .cont-sns-login {
+    padding: 0 24px 25px;
+    position: relative;
+}
+
+/* 모달창 sns 로그인 스타일링 */
+.cont-sns-login::before {
+    content: "또는";
+    position: relative;
+    display: inline-block;
+    width: 52px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: 0em;
+    color: #767676;
+    z-index: 10;
+    background: #fff;
+    text-align: center;
+}
+.cont-sns-login::after {
+    content: '';
+    display: inline-block;
+    width: calc(100% - 52px);
+    height: 1px;
+    background: #767676;
+    position: absolute;
+    top: 9px;
+    left: 25px;
+}
+.cont-sns-login li:nth-last-child() {
+    margin-bottom: 0;
 }
