@@ -24,10 +24,15 @@
             line-height: 40px;
         }
         .btn-select::after {
-            content: url('./Polygon\ 1.png');
+            position: absolute;
+            top: 17px;
+            right: 13px;
+            content: '';
             display: inline-block;
-            width: 12px;
-            float: right;
+            border-top: 4px solid #c4c4c4;
+            border-left: 4px solid transparent;
+            border-right: 4px solid transparent;
+            border-bottom: 4px solid transparent;
         }
         .btn-select:focus {
             border: 1px solid rgb(156,81,224);
