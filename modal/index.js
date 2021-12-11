@@ -1,7 +1,10 @@
 const btnOpen = document.getElementById('btn-open');
 const btnClose = document.getElementById('btn-close');
-const ContModal = document.querySelector('.cont-modal');
+const contModal = document.querySelector('.cont-modal');
 
-btn-open.onclick = () {
-  cont.modal.
-}
+btnOpen.onclick = () => {
+  contModal.style.display = 'flex';
+};
+btnClose.onclick = () => {
+  contModal.style.display = 'none';
+};
