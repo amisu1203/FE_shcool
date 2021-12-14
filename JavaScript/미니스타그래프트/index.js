@@ -12,6 +12,7 @@ $('#drone').click(function () {
         $('#hp').text(`HP : ${hp}`);
         if (hp === 0) {
             $('#bunker').fadeOut(300, 'linear');
+            $('#hp').text('You win!');
         }
     });
     $('#spit').animate({
