@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- ajax를 이용해서 data를 불러오는 작업 -->
+    <script>
+        // https://developer.mozilla.org/ko/docs/Learn/JavaScript/Objects/JSON 의 json 가져오기 부분
+        var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+
+        // 응답이 로드가 완료되었을때 function을 실행하라는 코드
+        request.onload = function () {
+            var superHeroes = request.response;
+            console.log(superHeroes);
+        }
+    </script>
+</body>
+
+</html>

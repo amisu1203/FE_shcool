@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+   <head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>SOP 설명</title>
+</head>
+<body>
+    <h1>hello! SOP!</h1>
+    <!-- 외부의 리소스를 불러옴 -->
+    <iframe  class="youtube"  width="950" height="534" src="https://www.youtube.com/embed/5tQeSeyUQL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe class="sameOrigin" src="sameOrigin.html" frameborder="0"></iframe>
+
+
+    <script>
+        const pageOther = document.querySelector('.youtube');
+        const pageSame = document.querySelector('.sameOrigin');
+
+        pageOther.onload = function () {
+            console.log('pageOther:', pageOther.contentDocument);
+        }
+        
+        pageSame.onload = function() {
+            console.log('pageSame:', pageSame.contentDocument);
+        }
+
+        console.log('pageOther:',pageOther.contentDocument);
+        console.log('pageSame:',pageSame.contentDocument);
+        // https://developer.mozilla.org/en-US/docs/Web/API/HTMLIFrameElement/contentDocument
+    </script>
+</body>
+</html>
