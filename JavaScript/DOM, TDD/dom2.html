@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p {
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 4번~더 정밀하게 배치하기 전까지-->
+    <p></p>
+    <input type="text">
+    <button>Write Something!</button>
+    <script>
+        const myBtn = document.querySelector("button");
+        const myP = document.querySelector("p");
+        const myInput = document.querySelector("input");
+
+        // myBtn.addEventListener('click', function () {
+        //     myP.textContent = myInput.value;
+        // });
+
+        // input 요소에 'input' 이벤트를 연결하면 실시간으로 값이 반영되게 만들 수도 있습니다.
+        // myInput.addEventListener('input', () => {
+        //     myP.textContent = myInput.value;
+        //     //value메서드는 인풋 요소에 사용가능
+        // });
+
+
+        myP.innerHTML = "<strong class='txt-st'>I'm Strong!!</strong>";
+        // myP.textContent = "<strong>I'm Strong!!</strong>";
+        // myP.outerHTML = "<div></div>";
+
+        // 일반 텍스트를 삽입 할 때는 innerHTML 을 사용하지 않는 것이 좋습니다. 단순히 텍스트만 넣을거면 textContent를 이용해라.
+        // innerHTML 은 요소(element) 내에 포함 된 HTML 마크업을 가져오거나 설정합니다.
+        // innerText 속성은 요소와 그 자손의 렌더링 된 텍스트 콘텐츠를 나타냅니다. (innerText는 "사람이 읽을 수 있는" 요소만 처리합니다.)
+        // textContent 속성은 노드의 텍스트 콘텐츠를 표현합니다.
+    </script>
+</body>
+
+</html>
