@@ -1,0 +1,12 @@
+li {
+    width: 100px;
+    height: 100px;
+    background: green;
+    transition: all .3s;
+    &:hover{
+        background-color: hotpink;
+    }
+    &:last-child {
+        border-bottom: 1px solid red;
+    }
+}

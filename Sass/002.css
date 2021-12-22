@@ -1,0 +1,16 @@
+li {
+  width: 100px;
+  height: 100px;
+  background: green;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+li:hover {
+  background-color: hotpink;
+}
+
+li:last-child {
+  border-bottom: 1px solid red;
+}
+/*# sourceMappingURL=002.css.map */

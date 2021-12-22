@@ -1,0 +1,28 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    @include flex-center;
+	background: gray;
+}
+
+.aside {
+    @include flex-center;
+	background: white;
+}
+/*.card와 .aside 클래스 선택자의 적용한 스타일이 겹침*/
+
+// 알규먼트 예제
+@mixin jisu-font($x, $y) {
+    font-size: $x * $y +px;
+    @content
+}
+
+div {
+    @include jisu-font(10,10) {
+        color: red;
+    }
+}
